@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현대자동차 - 캐스퍼</title>
+</head>
+ <!-- 초기화 -->
+ <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+ <!-- 기본공통서식 -->
+ <link href="./css/base.css" rel="stylesheet" type="text/css">
+
+ <!-- 메인 레이아웃 서식 -->
+ <link href="./css/layout.css" rel="stylesheet" type="text/css">
+
+ <!-- 메인 내용 서식 -->
+ <link href="./css/main.css" rel="stylesheet" type="text/css">
+
+ <!-- 슬라이드 -->
+ <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+
+ <!-- 아이콘폰트 -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+ 
+ <!-- 벤더프리픽스 -->
+ <script src="./script/prefixfree.min.js"></script>
+ 
+ <!-- 제이쿼리 라이브러리 -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <script src="./script/main.js"></script>
+
+
+
+<body>
+
+  <!-- 상단 헤더영역 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./img/logo-casper-white.png" alt="">
+      </a>
+    </h1>
+
+    <!-- 상단내비게이션 -->
+    <nav>
+      <ul class="gnb">
+        <li><a href="#intro" title="소개" class="arctic_scroll">소개</a></li>
+        <li><a href="#test" title="체험하기" class="arctic_scroll">체험</a></li>
+        <li><a href="#event" title="이벤트" class="arctic_scroll">이벤트</a></li>
+        <li><a href="#buy" title="구매안내" class="arctic_scroll">구매안내</a></li>
+        <li><a href="#cs" title="고객지원" class="arctic_scroll">고객지원</a></li>
+      </ul>
+    </nav>
+
+    <i class="fas fa-user"></i>
+    <i class="fas fa-bell"></i> <!-- 알림아이콘 -->
+  </header>
+
+
+  <!-- 원형 내비게이션 -->
+  <nav id="m_nav">
+    <ul>
+      <li><span class="num">1</span><a href="#intro" title="소개" class="arctic_scroll">소개</a></li>
+      <li><span class="num">2</span><a href="#test" title="체험하기" class="arctic_scroll">체험</a></li>
+      <li><span class="num">3</span><a href="#event" title="이벤트" class="arctic_scroll">이벤트</a></li>
+      <li><span class="num">4</span><a href="#buy" title="구매안내" class="arctic_scroll">구매안내</a></li>
+      <li><span class="num">5</span><a href="#cs" title="고객지원" class="arctic_scroll">고객지원</a></li>
+    </ul>
+  </nav>
+
+  <!-- 메인콘텐츠 영역 -->
+  <main>
+    <section id="mintro">
+      <h2>캐스터 인트로 영상</h2>
+      <article>
+        <h3>CASPER</h3>
+        <p>오직 캐스퍼 온라인에서만 구매하실 수 있습니다.</p>
+        <a href="https://casper.hyundai.com/vehicles/making/model" title="나만의 캐스퍼 만들기">나만의 캐스퍼 만들기</a>
+        <a href="https://casper.hyundai.com/vehicles/benefit" title="구매 혜택 보기">구매 혜택 보기</a>
+        <a href="https://casper.hyundai.com/vehicles/highlight" title="자세히보기">자세히 보기</a>
+      </article>
+
+      <video muted autoplay loop='infinite'>
+        <source src="./img/main_KV.webm" type="video/webm">
+      </video>
+
+      <a href="#top3" title="다음 페이지로 이동" id="next_btn" class="arctic_scroll">아래로 이동</a>
+    </section>
+
+    <section id="top3">
+      <h2>가장 많이 찾은 캐스퍼 Top3</h2>
+      <p>지금 가장 인기 있는 조합을 확인해보세요.</p>
+
+      <div class="swiper top3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="order">
+              <em>1위</em>
+              <strong class="title">캐스퍼 가솔린 1.0 터보 인스퍼레이션</strong>
+            </div>
+            <img src="./img/m.png" alt="">
+            <div class="detail">
+              <ul>
+                <li><span class="out_color"></span>외장색상<br>언블리치드 아이보리</li>
+                <li><span class="inner_color"></span>내장색상<br>다크그레이</li>
+                <li>선택품목<br>캐스퍼 액티브3</li>
+                <li><span class="price">19,600,000</span> 원</li>
+              </ul>
+              <a href="#" alt="" class="price2">견적내기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="order">
+              <em>2위</em>
+              <strong class="title">캐스퍼 가솔린 1.0 터보 인스퍼레이션</strong>
+            </div>
+            <img src="./img/m.png" alt="">
+            <div class="detail">
+              <ul>
+                <li><span class="out_color"></span>외장색상<br>언블리치드 아이보리</li>
+                <li><span class="inner_color"></span>내장색상<br>다크그레이/라이트카키</li>
+                <li>선택품목<br>캐스퍼 액티브3</li>
+                <li><span class="price">19,600,000</span> 원</li>
+              </ul>
+              <a href="#" alt="" class="price2">견적내기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="order">
+              <em>3위</em>
+              <strong class="title">캐스퍼 가솔린 1.0 터보 인스퍼레이션</strong>
+            </div>
+            <img src="./img/m.png" alt="">
+            <div class="detail">
+              <ul>
+                <li><span class="out_color"></span>외장색상<br>언블리치드 아이보리</li>
+                <li><span class="inner_color"></span>내장색상<br>다크그레이</li>
+                <li>선택품목<br>캐스퍼 액티브3</li>
+                <li><span class="price">19,600,000</span> 원</li>
+              </ul>
+              <a href="#" alt="" class="price2">견적내기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="intro">
+      <h2>소개</h2>
+    </section>
+
+    <section id="test">
+      <h2>시승신청</h2>
+    </section>
+
+    <section id="event">
+      <h2>이벤트&#x0026;프로모션</h2>
+    </section>
+
+    <section id="buy">
+      <h2>캐스퍼 구매 안내</h2>
+    </section>
+
+    <section id="cs">
+      <h2>고객지원</h2>
+    </section>
+
+  </main>
+
+
+  <!-- 푸터영역 -->
+  <footer></footer>
+
+  <!-- 아크틱스크롤 -->
+ <script src="./script/jquery.arctic_scroll.js"></script>
+ <script>
+   $(function(){
+    $(".arctic_scroll").arctic_scroll({
+        speed: 800
+    });
+});
+ </script>
+
+ <script src="./script/swiper.js"></script>
+ <script>
+  var swiper = new Swiper(".top3", {
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".top3 .swiper-button-next",
+      prevEl: ".top3 .swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>  
+</body>
+</html>

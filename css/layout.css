@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+
+
+main{
+  overflow: hidden;
+  /* clear:both; */
+}
+
+#mintro{
+  width: 100%; height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+#mintro > h2{display: none;}
+#mintro > article{position: absolute;}
+
+
+#intro{
+  height: 923px;
+  background-color: #00f;
+}
+#test{
+  height: 868px;
+  background-color: #0f0;
+}
+#event{
+  height: 750px;
+  background-color: #0ff;
+}
+#buy{
+  height: 1782px;
+  background-color: rgb(189, 112, 112);
+}
+#cs{
+  height: 1164px;
+  background-color: rgb(95, 95, 150);
+}
