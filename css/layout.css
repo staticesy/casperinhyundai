@@ -17,21 +17,26 @@ main{
 
 
 #intro{
-  height: 923px;
-  background-color: #00f;
+  height: 862px;
+  position: relative;
+  /*z-index 주려면 position줘야 함*/
 }
+
 #test{
-  height: 868px;
-  background-color: #0f0;
+  width: 1200px;
+  margin: 0px auto;
+  padding: 160px 0px 180px 0px;
 }
+
 #event{
   height: 750px;
-  background-color: #0ff;
+  position: relative;
+  background-color: #f4f4f4;
 }
 #buy{
-  height: 1782px;
-  background-color: rgb(189, 112, 112);
+  padding: 50px 0px;
 }
+
 #cs{
   height: 1164px;
   background-color: rgb(95, 95, 150);

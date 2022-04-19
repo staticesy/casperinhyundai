@@ -68,7 +68,9 @@ section > p{
 /* top3 서식 */
 .top3{
   padding: 40px 0px;
+  margin-bottom: 50px;
   text-align: center;
+  position: relative;
 }
 
 .top3 img{
@@ -123,10 +125,214 @@ section > p{
   font-weight: bold;
 }
 
-.detail .price2{
+/* 견적내기 */
+
+.price2{
   font-size: 16px;
   font-weight: bold;
   line-height: 50px;
   border: 1px solid #333;
-  padding: 6px 40px;
+  padding: 8px 40px;
+}
+
+
+.top3 .swiper-button-next, .top3 .swiper-button-prev, .top3 .swiper-pagination2{
+  position: absolute;
+}
+
+.top3 .swiper-button-next{
+  font-size: 1.6rem;
+  right: 10% !important;
+  z-index: 1000 !important;
+}
+
+.top3 .swiper-button-prev{
+  font-size: 1.6rem;
+  left: 10% !important;
+  z-index: 1001;
+}
+
+.top3 .swiper-pagination2{
+  bottom: -100px;
+  z-index: 1002;
+}
+
+/* 소개페이지 서식 */
+
+#intro img{width: 100%;}
+
+#intro > h2, #intro > strong, #intro > a{
+  position: absolute;
+}
+
+#intro > h2{
+  width: 100%;
+  text-align: center;
+}
+
+#intro > strong{
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.l_title{
+  left: 70px; top: 150px;
+  }
+.r_title{
+  right: 70px; bottom: 200px;
+  text-align: right;
+}
+
+#intro > a{
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.more{
+  font-size: 14px;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+
+.more:hover{
+  background: #333;
+  color: #fff;
+}
+
+
+/* 시승신청 서식 */
+
+
+
+#test::after{
+  content:"";
+  display: block;
+  clear:both; /*float방식 썼을 때 부모의 높이 사라지기 때문에 뒤에 가상공간 만들어서 clear주기*/
+}
+
+.p01{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 0px;
+}
+
+.p02{
+  position: absolute;
+  bottom: -18px;
+  width: 430px;
+  text-align: center;
+}
+
+.t_box{
+  width: 430px;
+  height: 260px;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.t_box:first-of-type{
+  margin-right: 30px;
+  margin-left: 120px;
+}
+
+.t_box:first-of-type h3{
+  padding-top: 22px;
+}
+
+.t_box:last-of-type h3{
+  padding-top: 25px;
+}
+
+.t_box > h3{
+  font-size:24px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.btn01{
+  background: rgb(8, 29, 97);
+  color: #fff;
+  line-height: 30px;
+  width: 200px;
+  border:none;
+}
+
+.t_box a{
+  color: rgb(75, 183, 255);
+  line-height: 50px;
+}
+
+.t_box a::after{
+  content:" >";
+}
+
+
+
+/* 이벤트 서식 */
+.event_s{
+  position: relative;
+  width: 1200px;
+  margin: 0px auto;
+  overflow: hidden;
+  top: 60px;
+}
+
+.swiper-pagination3{
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+/* 구매안내 서식 */
+
+#buy{
+  text-align: center;
+}
+#buy > h3{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 60px 0px 50px 0px;
+}
+
+.t_color01{color: rgb(53, 175, 173);}
+
+#buy ul{
+  width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#buy ul > li{
+  width: 30%;
+  margin-bottom: 60px;
+}
+
+#buy ul > li h4{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#buy ul > li img{
+  width: 70px;
+  padding: 15px 0px;
+}
+
+.p03{
+  line-height: 20px;
+}
+
+#buy iframe{
+  border: none;
+  width: 1000px;
+  height: 600px;
 }
